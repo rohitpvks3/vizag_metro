@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking</title>
+    <link rel="stylesheet" href="re.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="booking-form">
+            <h1>Train Ticket Booking</h1>
+            <form id="ticketForm">
+                <div class="form-group">
+                    <label for="date"><i class="fa fa-calendar-alt"></i> Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time"><i class="fa fa-clock"></i> Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="from"><i class="fa fa-map-marker-alt"></i> From:</label>
+                    <select id="from" name="from" required>
+                        <option value="Station A">Station A</option>
+                        <option value="Station B">Station B</option>
+                        <option value="Station C">Station C</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="to"><i class="fa fa-map-marker-alt"></i> To:</label>
+                    <select id="to" name="to" required>
+                        <option value="Station X">Station X</option>
+                        <option value="Station Y">Station Y</option>
+                        <option value="Station Z">Station Z</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="train"><i class="fa fa-train"></i> Train:</label>
+                    <select id="train" name="train" required>
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                </div>
+
+                <input type="hidden" id="cost" name="cost">
+
+                <button type="button" id="proceedButton">Proceed to Pay</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

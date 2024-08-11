@@ -1,0 +1,108 @@
+/* payment.css */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    background: url('vizag.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.payment-form {
+    background: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Apply blur effect for Safari */
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.payment-form h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #444;
+}
+
+.booking-summary {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px; /* Increased padding for more space */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; /* Light border */
+    text-align: left; /* Align text to the left */
+}
+
+.booking-summary h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #444;
+    text-align: center; /* Center the heading */
+}
+
+.booking-summary p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#payButton {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#payButton:hover {
+    background-color: #218838;
+}
+
+.fa {
+    margin-right: 8px;
+    color: #007bff;
+}

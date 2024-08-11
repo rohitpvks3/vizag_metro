@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="payment-form">
+            <h1>Payment Details</h1>
+            <div class="booking-summary">
+                <h2>Booking Summary</h2>
+                <p>Date: <span id="summaryDate"></span></p>
+                <p>Time: <span id="summaryTime"></span></p>
+                <p>From: <span id="summaryFrom"></span></p>
+                <p>To: <span id="summaryTo"></span></p>
+                <p>Train Number: <span id="summaryTrainNumber"></span></p>
+                <p>Cost: $<span id="summaryCost"></span></p>
+            </div>
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label for="cardName"><i class="fa fa-user"></i> Cardholder Name:</label>
+                    <input type="text" id="cardName" name="cardName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cardNumber"><i class="fa fa-credit-card"></i> Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="expiryDate"><i class="fa fa-calendar-alt"></i> Expiry Date:</label>
+                    <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cvv"><i class="fa fa-lock"></i> CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                </div>
+
+                <button type="button" id="payButton">Pay Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>
